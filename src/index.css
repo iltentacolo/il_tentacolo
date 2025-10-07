@@ -1,0 +1,609 @@
+/* Reset e base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Times New Roman', serif;
+  background: #f0f0f0;
+  background-image: 
+    linear-gradient(90deg, transparent 90%, rgba(0,0,0,0.08) 100%);
+  background-size: 8px 100%;
+  color: #808080;
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: #000000;
+  text-decoration: none;
+}
+
+.app {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+/* Header styles removed - using dynamic headers instead */
+
+/* Footer styles */
+.footer {
+  background: #00000010;
+  padding: 2rem 0 3rem;
+  text-align: center;
+  border-top: 1px solid #808080;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-content p {
+  margin-bottom: 0.5rem;
+}
+
+.footer-content p:last-child {
+  margin-bottom: 0;
+}
+
+/* Page styles */
+.page {
+  background: #f8f8f8;
+  padding: 2rem;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  margin-bottom: 2rem;
+}
+
+.page-title {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #404040;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.page-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #404040;
+  font-style: italic;
+}
+
+/* Card styles */
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 2px 8px rgba(64, 64, 64, 0.1);
+}
+
+.card-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #404040;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.card-content {
+  color: #404040;
+  font-family: 'Times New Roman', serif;
+}
+
+/* Button styles */
+.btn {
+  background: #404040;
+  color: #ffffff;
+  border: 1px solid #404040;
+  padding: 0.8rem 1.5rem;
+  font-weight: normal;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0.5rem;
+  font-family: 'Times New Roman', serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+
+.btn:hover {
+  background: #ffffff;
+  color: #404040;
+  text-decoration: none;
+}
+
+/* Typography improvements */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Times New Roman', serif;
+  color: #404040;
+}
+
+p {
+  font-family: 'Times New Roman', serif;
+  color: #404040;
+  margin-bottom: 1rem;
+}
+
+ul, ol {
+  font-family: 'Times New Roman', serif;
+  color: #404040;
+}
+
+/* Issues list styles removed - issues now listed directly in Home page */
+
+/* Issue Detail Page */
+.fixed-title {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  text-align: center;
+  padding: 0.5rem 0;
+  background: #f8f8f8;
+  border-bottom: 1px solid #404040;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+}
+
+.fixed-title.visible {
+  transform: translateY(0);
+}
+
+.fixed-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.fixed-title .page-title {
+  font-size: 1.8rem;
+  color: #000000;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: bold !important;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  font-style: normal !important;
+}
+
+.fixed-title-link:hover .page-title {
+  color: #666666;
+}
+
+.dynamic-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background: #f8f8f8;
+  border-bottom: 1px solid #404040;
+  transform: translateY(-100%);
+  transition: transform 0.3s ease;
+  padding: 0.5rem 0;
+}
+
+.dynamic-header.visible {
+  transform: translateY(0);
+}
+
+.dynamic-header-content {
+  text-align: center;
+  padding: 2rem 0 1rem 0;
+}
+
+.dynamic-header-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.dynamic-header-title {
+  font-size: 2.2rem;
+  color: #000000;
+  margin: 0;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: bold !important;
+  letter-spacing: 2px;
+  transition: color 0.3s ease;
+  font-style: normal !important;
+}
+
+.dynamic-header-link:hover .dynamic-header-title {
+  color: #666666;
+}
+
+
+.issue-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  border-bottom: none;
+  padding: 2rem 0 1rem 0;
+  margin-top: 0;
+}
+
+.issue-main-title-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.issue-main-title {
+  font-size: 2.2rem !important;
+  color: #000000 !important;
+  margin: 0 0 1.5rem 0;
+  font-family: 'Times New Roman', Times, serif !important;
+  font-weight: bold !important;
+  letter-spacing: 2px !important;
+  transition: color 0.3s ease;
+  font-style: normal !important;
+}
+
+.issue-main-title-link:hover .issue-main-title {
+  color: #666666;
+}
+
+/* Home Page */
+.home-header {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0 1rem 0;
+  margin-top: 0;
+}
+
+.home-main-title {
+  font-size: 2.2rem;
+  color: #404040;
+  margin: 0 0 1rem 0;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.issue-info {
+  margin: 1rem 0;
+}
+
+/* Navigazione integrata nel titolo */
+.issue-title-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.issue-title {
+  font-size: 1.5rem;
+  margin: 0;
+  color: #404040;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-align: center;
+  flex: 1;
+}
+
+.title-nav-prev {
+  position: absolute;
+  left: 0;
+}
+
+.title-nav-next {
+  position: absolute;
+  right: 0;
+}
+
+.title-nav-link {
+  color: #404040;
+  text-decoration: none;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  white-space: nowrap;
+}
+
+.title-nav-link:hover {
+  background: #404040;
+  color: #ffffff;
+}
+
+.title-nav-prev {
+  text-align: right;
+}
+
+.title-nav-next {
+  text-align: left;
+}
+
+
+.issue-date {
+  font-size: 1.1rem;
+  color: #404040;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.issue-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.issue-section {
+  text-align: center;
+}
+
+/* Section title removed - not used */
+
+.issue-image-container {
+  text-align: center;
+}
+
+.issue-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  box-shadow: 0 6px 10px rgba(64, 64, 64, 0.1);
+}
+
+
+/* Issue text content removed - no longer displaying textual content */
+
+/* Page navigation for multi-page issues */
+.page-indicator {
+  font-size: 0.9rem;
+  color: #404040;
+  font-style: italic;
+  margin: 0.5rem 0;
+}
+
+.page-navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.nav-btn {
+  background: #404040;
+  color: #ffffff;
+  border: 1px solid #404040;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.9rem;
+  transition: all 0.3s ease;
+  min-width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover:not(.disabled) {
+  background: #ffffff;
+  color: #404040;
+}
+
+.nav-btn.active {
+  background: #ffffff;
+  color: #404040;
+  font-weight: bold;
+}
+
+.nav-btn.disabled {
+  background: #cccccc;
+  color: #888888;
+  cursor: not-allowed;
+  border-color: #cccccc;
+}
+
+.nav-arrow {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.nav-number {
+  font-weight: normal;
+}
+
+/* Note di fondo */
+.issue-notes {
+  margin-top: 2rem;
+  padding: 0;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.notes-title {
+  font-size: 1.2rem;
+  color: #404040;
+  margin: 0 0 1rem 0;
+  font-family: 'Times New Roman', serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid #404040;
+  padding-bottom: 0.5rem;
+}
+
+.notes-content {
+  line-height: 1.4;
+}
+
+.note-item {
+  margin: 0.3rem !important;
+  color: #404040;
+  font-family: 'Times New Roman', serif;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: flex-start;
+}
+
+.note-item:last-child {
+  margin-bottom: 0;
+}
+
+.note-number {
+  font-weight: bold;
+  margin-right: 0.5rem;
+  color: #666666;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+/* Stili per elementi HTML nelle note - rimossi per evitare conflitti */
+
+.notes-content img {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #404040;
+  border-radius: 4px;
+  margin: 0.5rem 0;
+}
+
+.notes-content blockquote {
+  border-left: 3px solid #404040;
+  padding-left: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 0 4px 4px 0;
+}
+
+.notes-content ul, .notes-content ol {
+  margin: 1rem 0;
+  padding-left: 2rem;
+}
+
+.notes-content li {
+  margin-bottom: 0.5rem;
+}
+
+.notes-content a {
+  color: #404040;
+  text-decoration: underline;
+}
+
+.notes-content a:hover {
+  color: #666666;
+}
+
+.notes-content strong {
+  font-weight: bold;
+  color: #000000;
+}
+
+.notes-content em {
+  font-style: italic;
+}
+
+.notes-content div {
+  margin: 1rem 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .main-content {
+    padding: 1rem;
+  }
+  
+  .page {
+    padding: 1rem;
+  }
+  
+  .page-title {
+    font-size: 1.8rem;
+  }
+
+  .fixed-title .page-title {
+    font-size: 1.4rem;
+  }
+
+  .dynamic-header-content {
+    padding: 1.5rem 0 0.8rem 0;
+  }
+
+  .dynamic-header-title {
+    font-size: 1.7rem;
+  }
+
+  .issue-main-title {
+    font-size: 1.8rem;
+  }
+
+  .home-main-title {
+    font-size: 1.8rem;
+  }
+
+  .issue-notes {
+    margin-top: 1rem;
+    padding: 0;
+  }
+
+  .notes-title {
+    font-size: 1rem;
+  }
+
+  .note-item {
+    font-size: 0.9rem;
+  }
+
+  .issue-title-row {
+    flex-direction: column;
+    gap: 1rem;
+    position: static;
+  }
+
+  .title-nav-prev, .title-nav-next {
+    position: static;
+  }
+
+  .title-nav-link {
+    font-size: 0.8rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  .issue-title {
+    font-size: 1.2rem;
+    flex: none;
+  }
+}
