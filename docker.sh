@@ -3,7 +3,7 @@ docker stop iltentacolo-sullo-co 2>/dev/null || true
 docker rm iltentacolo-sullo-co 2>/dev/null || true
 
 docker run --name iltentacolo-sullo-co \
-  -p 80:80 \
+  -p 8040 \
   --restart unless-stopped \
   -e VIRTUAL_HOST=iltentacolo.sullo.co \
   -e LETSENCRYPT_HOST=iltentacolo.sullo.co \
