@@ -46,7 +46,7 @@ function IssueDetail() {
     ],
     "SEI": [
       "Questa copia è una versione in lavorazione, come può capirsi dalla nota nel primo testo, che suggerisce di modificare il testo 'un cielo da volarci dentro vestiti' in 'un cielo fa volarci dentro: vèstiti!'",
-      "Giorgio Spaccarazzi era Mimmo. Amico Fidato credo fosse Fedele Stabile. Gli altri testi, benché non firmati, sono scritti da uno solo di noi. Nello specifico, io scrissi <i>Osserva come sorge</i>, <i>Autobus di giorno</i> e <i>Torno a casa</i>, Mimmo i restanti."
+      "Giorgio Spaccarazzi era Mimmo. Amico Fidato credo fosse Fedele Stabile. Gli altri testi, benché non firmati, sono scritti da uno solo di noi. Nello specifico, io scrissi <i>Osserva come sorge</i>, <i>Autobus di giorno</i> e <i>Torno a casa</i>, Mimmo <i>Piove sudore</i> e Salvatore Principato <i>Caro diletto Sello</i>"
     ],
     "SETTE": [
       "Questo è il primo numero in cui appaiono i nostri nomi veri.",
@@ -87,7 +87,8 @@ function IssueDetail() {
       "Peppino Persico potrebbe essere una persona reale, ma non ci giurerei.",
       "<i>Pechino</i> era una prova di stampa in Postscript. Quando lo stampammo ci sembrò molto interessante, gli demmo un titolo e lo inserimmo nel numero.",
       "<i>Histoire d'O</i> e <i>su e giù</i> erano mie.",
-      "Angelo Adamo è il grande <a href='https://www.google.com/search?q=angelo+adamo' target='_blank'>Angelo Adamo</a>."
+      "Angelo Adamo è il grande <a href='https://www.google.com/search?q=angelo+adamo' target='_blank'>Angelo Adamo</a>.",
+      "'Che ho freddo' è Salvatore Principato."
     ],
     "SEDICI": [
       "Numero interamente scritto a quattro mani da me e Mimmo."
