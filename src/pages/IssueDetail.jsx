@@ -81,7 +81,7 @@ function IssueDetail() {
       "Di questo numero posseggo solo una versione in fase di lavorazione, ovviamente incompleta. Se qualcuno ne possiede una versione definitiva, per cortesia, mi scriva a ilTentacolo@sullo.co.",
     ],
     "QUINDICI": [
-      "Questo è il primo numero con più di una pagina.",
+      "Questo è il primo numero con più di una pagina. Si tratta qui di una copia in lavorazione, poiché ci sono dei vuoti.",
       "<i>Lo stordimento arduo</i>, <i>Età</i>, <i>Alternarietà</i> e <i>Ventilazione Forzata</i> sono scritte da me e Mimmo, che impersonavamo anche Leonida Puddu e Auriga d'Este.",
       "La citazione dantesca la inserimmo perché radicalizzava il maschilismo di quel periodo, e, purtroppo, anche quello odierno.",
       "Peppino Persico potrebbe essere una persona reale, ma non ci giurerei.",
