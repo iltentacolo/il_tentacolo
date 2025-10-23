@@ -88,7 +88,7 @@ function IssueDetail() {
       "<i>Pechino</i> era una prova di stampa in Postscript. Quando lo stampammo ci sembrò molto interessante, gli demmo un titolo e lo inserimmo nel numero.",
       "<i>Histoire d'O</i> e <i>su e giù</i> erano mie.",
       "Angelo Adamo è il grande <a href='https://www.google.com/search?q=angelo+adamo' target='_blank'>Angelo Adamo</a>.",
-      "'Che ho freddo' è Salvatore Principato."
+      "<i>Che ho freddo</i> è Salvatore Principato."
     ],
     "SEDICI": [
       "Numero interamente scritto a quattro mani da me e Mimmo."
